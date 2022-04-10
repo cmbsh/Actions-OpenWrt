@@ -16,8 +16,11 @@
 # Add a feed source
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo 'src-git ifit https://github.com/kenzok8/luci-theme-ifit.git' >>feeds.conf.default
 
 #add theme
 cd package/lean  
 rm -rf luci-theme-argon  
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
